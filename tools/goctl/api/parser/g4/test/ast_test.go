@@ -4,9 +4,9 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/melonwool/go-zero/tools/goctl/api/parser/g4/ast"
+	"github.com/melonwool/go-zero/tools/goctl/api/parser/g4/gen/api"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/tools/goctl/api/parser/g4/ast"
-	"github.com/tal-tech/go-zero/tools/goctl/api/parser/g4/gen/api"
 )
 
 var parser = ast.NewParser(ast.WithParserPrefix("test.api"), ast.WithParserDebug())

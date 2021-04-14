@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/template"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	"github.com/melonwool/go-zero/tools/goctl/model/sql/template"
+	"github.com/melonwool/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 )
 
 type findOneCode struct {

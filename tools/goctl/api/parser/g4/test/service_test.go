@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 
+	"github.com/melonwool/go-zero/tools/goctl/api/parser/g4/ast"
+	"github.com/melonwool/go-zero/tools/goctl/api/parser/g4/gen/api"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/tools/goctl/api/parser/g4/ast"
-	"github.com/tal-tech/go-zero/tools/goctl/api/parser/g4/gen/api"
 )
 
 func TestBody(t *testing.T) {

@@ -3,10 +3,10 @@ package zrpc
 import (
 	"testing"
 
+	"github.com/melonwool/go-zero/core/discov"
+	"github.com/melonwool/go-zero/core/service"
+	"github.com/melonwool/go-zero/core/stores/redis"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/discov"
-	"github.com/tal-tech/go-zero/core/service"
-	"github.com/tal-tech/go-zero/core/stores/redis"
 )
 
 func TestRpcClientConf(t *testing.T) {

@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	conf "github.com/tal-tech/go-zero/tools/goctl/config"
-	"github.com/tal-tech/go-zero/tools/goctl/rpc/parser"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/format"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	conf "github.com/melonwool/go-zero/tools/goctl/config"
+	"github.com/melonwool/go-zero/tools/goctl/rpc/parser"
+	"github.com/melonwool/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/util/format"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 )
 
 const mainTemplate = `package main
@@ -20,12 +20,12 @@ import (
 
 	{{.imports}}
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/zrpc"
+	"github.com/melonwool/go-zero/core/conf"
+	"github.com/melonwool/go-zero/zrpc"
 	"google.golang.org/grpc"
 )
 
-var configFile = flag.String("f", "etc/{{.serviceName}}.yaml", "the config file")
+var configFile = flag.String("f", "etc/config/{{.serviceName}}.yaml", "the config file")
 
 func main() {
 	flag.Parse()

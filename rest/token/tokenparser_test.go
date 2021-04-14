@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
+	"github.com/melonwool/go-zero/core/timex"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/timex"
 )
 
 func TestTokenParser(t *testing.T) {

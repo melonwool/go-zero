@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/melonwool/go-zero/core/errorx"
+	"github.com/melonwool/go-zero/core/hash"
+	"github.com/melonwool/go-zero/core/stores/redis"
+	"github.com/melonwool/go-zero/core/stores/redis/redistest"
+	"github.com/melonwool/go-zero/core/syncx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/errorx"
-	"github.com/tal-tech/go-zero/core/hash"
-	"github.com/tal-tech/go-zero/core/stores/redis"
-	"github.com/tal-tech/go-zero/core/stores/redis/redistest"
-	"github.com/tal-tech/go-zero/core/syncx"
 )
 
 type mockedNode struct {

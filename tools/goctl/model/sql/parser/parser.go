@@ -5,11 +5,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tal-tech/go-zero/core/collection"
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/converter"
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/model"
-	"github.com/tal-tech/go-zero/tools/goctl/util/console"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	"github.com/melonwool/go-zero/core/collection"
+	"github.com/melonwool/go-zero/tools/goctl/model/sql/converter"
+	"github.com/melonwool/go-zero/tools/goctl/model/sql/model"
+	"github.com/melonwool/go-zero/tools/goctl/util/console"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 	"github.com/xwb1989/sqlparser"
 )
 

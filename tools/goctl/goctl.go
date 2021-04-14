@@ -5,25 +5,25 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/tools/goctl/api/apigen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/dartgen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/docgen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/format"
-	"github.com/tal-tech/go-zero/tools/goctl/api/gogen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/javagen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/ktgen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/new"
-	"github.com/tal-tech/go-zero/tools/goctl/api/tsgen"
-	"github.com/tal-tech/go-zero/tools/goctl/api/validate"
-	"github.com/tal-tech/go-zero/tools/goctl/configgen"
-	"github.com/tal-tech/go-zero/tools/goctl/docker"
-	"github.com/tal-tech/go-zero/tools/goctl/kube"
-	model "github.com/tal-tech/go-zero/tools/goctl/model/sql/command"
-	"github.com/tal-tech/go-zero/tools/goctl/plugin"
-	rpc "github.com/tal-tech/go-zero/tools/goctl/rpc/cli"
-	"github.com/tal-tech/go-zero/tools/goctl/tpl"
-	"github.com/tal-tech/go-zero/tools/goctl/upgrade"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/tools/goctl/api/apigen"
+	"github.com/melonwool/go-zero/tools/goctl/api/dartgen"
+	"github.com/melonwool/go-zero/tools/goctl/api/docgen"
+	"github.com/melonwool/go-zero/tools/goctl/api/format"
+	"github.com/melonwool/go-zero/tools/goctl/api/gogen"
+	"github.com/melonwool/go-zero/tools/goctl/api/javagen"
+	"github.com/melonwool/go-zero/tools/goctl/api/ktgen"
+	"github.com/melonwool/go-zero/tools/goctl/api/new"
+	"github.com/melonwool/go-zero/tools/goctl/api/tsgen"
+	"github.com/melonwool/go-zero/tools/goctl/api/validate"
+	"github.com/melonwool/go-zero/tools/goctl/configgen"
+	"github.com/melonwool/go-zero/tools/goctl/docker"
+	"github.com/melonwool/go-zero/tools/goctl/kube"
+	model "github.com/melonwool/go-zero/tools/goctl/model/sql/command"
+	"github.com/melonwool/go-zero/tools/goctl/plugin"
+	rpc "github.com/melonwool/go-zero/tools/goctl/rpc/cli"
+	"github.com/melonwool/go-zero/tools/goctl/tpl"
+	"github.com/melonwool/go-zero/tools/goctl/upgrade"
 	"github.com/urfave/cli"
 )
 
@@ -111,7 +111,7 @@ var (
 						},
 						cli.StringFlag{
 							Name:  "style",
-							Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+							Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 						},
 					},
 					Action: gogen.GoCommand,
@@ -210,7 +210,7 @@ var (
 						},
 						cli.StringFlag{
 							Name:  "style",
-							Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+							Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 						},
 					},
 					Action: plugin.PluginCommand,
@@ -330,7 +330,7 @@ var (
 					Flags: []cli.Flag{
 						cli.StringFlag{
 							Name:  "style",
-							Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+							Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 						},
 						cli.BoolFlag{
 							Name:  "idea",
@@ -368,7 +368,7 @@ var (
 						},
 						cli.StringFlag{
 							Name:  "style",
-							Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+							Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 						},
 						cli.BoolFlag{
 							Name:  "idea",
@@ -401,7 +401,7 @@ var (
 								},
 								cli.StringFlag{
 									Name:  "style",
-									Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+									Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 								},
 								cli.BoolFlag{
 									Name:  "cache, c",
@@ -436,7 +436,7 @@ var (
 								},
 								cli.StringFlag{
 									Name:  "style",
-									Usage: "the file naming format, see [https://github.com/tal-tech/go-zero/tree/master/tools/goctl/config/readme.md]",
+									Usage: "the file naming format, see [https://github.com/melonwool/go-zero/tree/master/tools/goctl/config/readme.md]",
 								},
 								cli.BoolFlag{
 									Name:  "idea",

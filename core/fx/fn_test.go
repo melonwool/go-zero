@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/melonwool/go-zero/core/stringx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/stringx"
 )
 
 func TestBuffer(t *testing.T) {

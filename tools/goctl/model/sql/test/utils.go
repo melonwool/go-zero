@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/mapping"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/mapping"
 )
 
 // ErrNotFound is the alias of sql.ErrNoRows

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/tal-tech/go-zero/core/mapping"
+	"github.com/melonwool/go-zero/core/mapping"
 )
 
 const tagName = "db"

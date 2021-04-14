@@ -5,9 +5,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/errorx"
-	"github.com/tal-tech/go-zero/core/hash"
-	"github.com/tal-tech/go-zero/core/syncx"
+	"github.com/melonwool/go-zero/core/errorx"
+	"github.com/melonwool/go-zero/core/hash"
+	"github.com/melonwool/go-zero/core/syncx"
 )
 
 type (

@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/melonwool/go-zero/rest/httpx"
+	"github.com/melonwool/go-zero/rest/internal/context"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/rest/httpx"
-	"github.com/tal-tech/go-zero/rest/internal/context"
 )
 
 const (

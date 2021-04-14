@@ -4,9 +4,9 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/melonwool/go-zero/tools/goctl/model/sql/model"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/model"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
 )
 
 func TestParsePlainText(t *testing.T) {

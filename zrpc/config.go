@@ -1,9 +1,9 @@
 package zrpc
 
 import (
-	"github.com/tal-tech/go-zero/core/discov"
-	"github.com/tal-tech/go-zero/core/service"
-	"github.com/tal-tech/go-zero/core/stores/redis"
+	"github.com/melonwool/go-zero/core/discov"
+	"github.com/melonwool/go-zero/core/service"
+	"github.com/melonwool/go-zero/core/stores/redis"
 )
 
 type (

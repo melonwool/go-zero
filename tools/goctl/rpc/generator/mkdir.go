@@ -4,10 +4,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tal-tech/go-zero/tools/goctl/rpc/parser"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/ctx"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	"github.com/melonwool/go-zero/tools/goctl/rpc/parser"
+	"github.com/melonwool/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/util/ctx"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 )
 
 const (
@@ -53,6 +53,7 @@ type (
 func mkdir(ctx *ctx.ProjectContext, proto parser.Proto) (DirContext, error) {
 	inner := make(map[string]Dir)
 	etcDir := filepath.Join(ctx.WorkDir, "etc")
+	etcConfigDir := filepath.Join(ctx.WorkDir, "etc/config")
 	internalDir := filepath.Join(ctx.WorkDir, "internal")
 	configDir := filepath.Join(internalDir, "config")
 	logicDir := filepath.Join(internalDir, "logic")
@@ -70,6 +71,11 @@ func mkdir(ctx *ctx.ProjectContext, proto parser.Proto) (DirContext, error) {
 		Base:     filepath.Base(ctx.WorkDir),
 	}
 	inner[etc] = Dir{
+		Filename: etcDir,
+		Package:  filepath.ToSlash(filepath.Join(ctx.Path, strings.TrimPrefix(etcDir, ctx.Dir))),
+		Base:     filepath.Base(etcDir),
+	}
+	inner[etcConfigDir] = Dir{
 		Filename: etcDir,
 		Package:  filepath.ToSlash(filepath.Join(ctx.Path, strings.TrimPrefix(etcDir, ctx.Dir))),
 		Base:     filepath.Base(etcDir),

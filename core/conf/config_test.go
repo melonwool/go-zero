@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/melonwool/go-zero/core/fs"
+	"github.com/melonwool/go-zero/core/hash"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/fs"
-	"github.com/tal-tech/go-zero/core/hash"
 )
 
 func TestLoadConfig_notExists(t *testing.T) {

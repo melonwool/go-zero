@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/melonwool/go-zero/rest/internal"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/rest/internal"
 )
 
 func init() {

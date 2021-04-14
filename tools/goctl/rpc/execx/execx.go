@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/vars"
+	"github.com/melonwool/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/vars"
 )
 
 // Run provides the execution of shell scripts in golang,

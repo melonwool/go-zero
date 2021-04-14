@@ -17,9 +17,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/iox"
-	"github.com/tal-tech/go-zero/core/sysx"
-	"github.com/tal-tech/go-zero/core/timex"
+	"github.com/melonwool/go-zero/core/iox"
+	"github.com/melonwool/go-zero/core/sysx"
+	"github.com/melonwool/go-zero/core/timex"
 )
 
 const (
@@ -431,11 +431,11 @@ func setupWithFiles(c LogConf) error {
 		opts = append(opts, WithKeepDays(c.KeepDays))
 	}
 
-	accessFile := path.Join(c.Path, accessFilename)
-	errorFile := path.Join(c.Path, errorFilename)
-	severeFile := path.Join(c.Path, severeFilename)
-	slowFile := path.Join(c.Path, slowFilename)
-	statFile := path.Join(c.Path, statFilename)
+	accessFile := path.Join(c.Path, c.ServiceName+"."+accessFilename)
+	errorFile := path.Join(c.Path, c.ServiceName+"."+errorFilename)
+	severeFile := path.Join(c.Path, c.ServiceName+"."+severeFilename)
+	slowFile := path.Join(c.Path, c.ServiceName+"."+slowFilename)
+	statFile := path.Join(c.Path, c.ServiceName+"."+statFilename)
 
 	once.Do(func() {
 		atomic.StoreUint32(&initialized, 1)

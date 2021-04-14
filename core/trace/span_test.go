@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/melonwool/go-zero/core/stringx"
+	"github.com/melonwool/go-zero/core/trace/tracespec"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/stringx"
-	"github.com/tal-tech/go-zero/core/trace/tracespec"
 	"google.golang.org/grpc/metadata"
 )
 

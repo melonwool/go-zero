@@ -10,13 +10,13 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/mathx"
+	"github.com/melonwool/go-zero/core/stat"
+	"github.com/melonwool/go-zero/core/stores/redis"
+	"github.com/melonwool/go-zero/core/stores/redis/redistest"
+	"github.com/melonwool/go-zero/core/syncx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/mathx"
-	"github.com/tal-tech/go-zero/core/stat"
-	"github.com/tal-tech/go-zero/core/stores/redis"
-	"github.com/tal-tech/go-zero/core/stores/redis/redistest"
-	"github.com/tal-tech/go-zero/core/syncx"
 )
 
 var errTestNotFound = errors.New("not found")

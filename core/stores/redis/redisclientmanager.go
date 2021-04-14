@@ -4,7 +4,7 @@ import (
 	"io"
 
 	red "github.com/go-redis/redis"
-	"github.com/tal-tech/go-zero/core/syncx"
+	"github.com/melonwool/go-zero/core/syncx"
 )
 
 const (
@@ -15,12 +15,12 @@ const (
 
 var clientManager = syncx.NewResourceManager()
 
-func getClient(server, pass string) (*red.Client, error) {
+func getClient(server, pass string, db int) (*red.Client, error) {
 	val, err := clientManager.GetResource(server, func() (io.Closer, error) {
 		store := red.NewClient(&red.Options{
 			Addr:         server,
 			Password:     pass,
-			DB:           defaultDatabase,
+			DB:           db,
 			MaxRetries:   maxRetries,
 			MinIdleConns: idleConns,
 		})

@@ -3,7 +3,7 @@ package generator
 import (
 	"fmt"
 
-	"github.com/tal-tech/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/util"
 	"github.com/urfave/cli"
 )
 

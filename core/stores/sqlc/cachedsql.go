@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/stores/cache"
-	"github.com/tal-tech/go-zero/core/stores/redis"
-	"github.com/tal-tech/go-zero/core/stores/sqlx"
-	"github.com/tal-tech/go-zero/core/syncx"
+	"github.com/melonwool/go-zero/core/stores/cache"
+	"github.com/melonwool/go-zero/core/stores/redis"
+	"github.com/melonwool/go-zero/core/stores/sqlx"
+	"github.com/melonwool/go-zero/core/syncx"
 )
 
 // see doc/sql-cache.md

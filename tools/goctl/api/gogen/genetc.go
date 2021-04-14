@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/tal-tech/go-zero/tools/goctl/api/spec"
-	"github.com/tal-tech/go-zero/tools/goctl/config"
-	"github.com/tal-tech/go-zero/tools/goctl/util/format"
+	"github.com/melonwool/go-zero/tools/goctl/api/spec"
+	"github.com/melonwool/go-zero/tools/goctl/config"
+	"github.com/melonwool/go-zero/tools/goctl/util/format"
 )
 
 const (
@@ -30,7 +30,7 @@ func genEtc(dir string, cfg *config.Config, api *spec.ApiSpec) error {
 
 	return genFile(fileGenConfig{
 		dir:             dir,
-		subdir:          etcDir,
+		subdir:          etcDir + "/config",
 		filename:        fmt.Sprintf("%s.yaml", filename),
 		templateName:    "etcTemplate",
 		category:        category,

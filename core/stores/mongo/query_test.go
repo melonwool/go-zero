@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/globalsign/mgo"
+	"github.com/melonwool/go-zero/core/breaker"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/breaker"
 )
 
 func Test_rejectedQuery_All(t *testing.T) {

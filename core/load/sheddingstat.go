@@ -4,8 +4,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/stat"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/stat"
 )
 
 type (

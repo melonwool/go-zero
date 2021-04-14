@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
+	"github.com/melonwool/go-zero/core/discov/internal"
+	"github.com/melonwool/go-zero/core/lang"
+	"github.com/melonwool/go-zero/core/logx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/discov/internal"
-	"github.com/tal-tech/go-zero/core/lang"
-	"github.com/tal-tech/go-zero/core/logx"
 	"go.etcd.io/etcd/clientv3"
 )
 

@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/threading"
 	"github.com/olekukonko/tablewriter"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/threading"
 )
 
 type (

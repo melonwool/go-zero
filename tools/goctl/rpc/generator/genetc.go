@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	conf "github.com/tal-tech/go-zero/tools/goctl/config"
-	"github.com/tal-tech/go-zero/tools/goctl/rpc/parser"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/format"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	conf "github.com/melonwool/go-zero/tools/goctl/config"
+	"github.com/melonwool/go-zero/tools/goctl/rpc/parser"
+	"github.com/melonwool/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/tools/goctl/util/format"
+	"github.com/melonwool/go-zero/tools/goctl/util/stringx"
 )
 
 const etcTemplate = `Name: {{.serviceName}}.rpc
@@ -29,7 +29,7 @@ func (g *DefaultGenerator) GenEtc(ctx DirContext, _ parser.Proto, cfg *conf.Conf
 		return err
 	}
 
-	fileName := filepath.Join(dir.Filename, fmt.Sprintf("%v.yaml", etcFilename))
+	fileName := filepath.Join(dir.Filename+"/config", fmt.Sprintf("%v.yaml", etcFilename))
 
 	text, err := util.LoadTemplate(category, etcTemplateFileFile, etcTemplate)
 	if err != nil {

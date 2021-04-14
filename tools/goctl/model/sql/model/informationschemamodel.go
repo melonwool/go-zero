@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/tal-tech/go-zero/core/stores/sqlx"
+	"github.com/melonwool/go-zero/core/stores/sqlx"
 )
 
 const indexPri = "PRIMARY"

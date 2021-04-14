@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/tal-tech/go-zero/core/stringx"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
+	"github.com/melonwool/go-zero/core/stringx"
+	"github.com/melonwool/go-zero/tools/goctl/util"
 )
 
 const (

@@ -3,8 +3,8 @@ package internal
 import (
 	"testing"
 
+	"github.com/melonwool/go-zero/core/netx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/netx"
 )
 
 func TestFigureOutListenOn(t *testing.T) {

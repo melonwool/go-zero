@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	conf "github.com/tal-tech/go-zero/tools/goctl/config"
-	"github.com/tal-tech/go-zero/tools/goctl/rpc/execx"
-	"github.com/tal-tech/go-zero/tools/goctl/rpc/parser"
+	conf "github.com/melonwool/go-zero/tools/goctl/config"
+	"github.com/melonwool/go-zero/tools/goctl/rpc/execx"
+	"github.com/melonwool/go-zero/tools/goctl/rpc/parser"
 )
 
 // GenPb generates the pb.go file, which is a layer of packaging for protoc to generate gprc,

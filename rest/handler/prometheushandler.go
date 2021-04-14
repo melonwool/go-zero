@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/metric"
-	"github.com/tal-tech/go-zero/core/timex"
-	"github.com/tal-tech/go-zero/rest/internal/security"
+	"github.com/melonwool/go-zero/core/metric"
+	"github.com/melonwool/go-zero/core/timex"
+	"github.com/melonwool/go-zero/rest/internal/security"
 )
 
 const serverNamespace = "http_server"

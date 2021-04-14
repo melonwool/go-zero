@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/tal-tech/go-zero/tools/goctl/api/parser/g4/gen/api"
-	"github.com/tal-tech/go-zero/tools/goctl/api/util"
+	"github.com/melonwool/go-zero/tools/goctl/api/parser/g4/gen/api"
+	"github.com/melonwool/go-zero/tools/goctl/api/util"
 )
 
 type (

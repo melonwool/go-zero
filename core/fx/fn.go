@@ -4,9 +4,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/tal-tech/go-zero/core/collection"
-	"github.com/tal-tech/go-zero/core/lang"
-	"github.com/tal-tech/go-zero/core/threading"
+	"github.com/melonwool/go-zero/core/collection"
+	"github.com/melonwool/go-zero/core/lang"
+	"github.com/melonwool/go-zero/core/threading"
 )
 
 const (

@@ -3,7 +3,7 @@ package stringx
 import (
 	"errors"
 
-	"github.com/tal-tech/go-zero/core/lang"
+	"github.com/melonwool/go-zero/core/lang"
 )
 
 var (

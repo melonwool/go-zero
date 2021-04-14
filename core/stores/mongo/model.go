@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/globalsign/mgo"
-	"github.com/tal-tech/go-zero/core/breaker"
+	"github.com/melonwool/go-zero/core/breaker"
 )
 
 type (

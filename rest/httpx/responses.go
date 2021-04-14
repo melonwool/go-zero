@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/tal-tech/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/logx"
 )
 
 var (
@@ -13,21 +13,33 @@ var (
 	lock         sync.RWMutex
 )
 
+type errorResp struct {
+	ErrorCode    int    `json:"error_code"`
+	ErrorMessage string `json:"error_message"`
+}
+
 // Error writes err into w.
 func Error(w http.ResponseWriter, err error) {
 	lock.RLock()
 	handler := errorHandler
 	lock.RUnlock()
 
+	resp := errorResp{}
 	if handler == nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+		// http.Error(w, err.Error(), http.StatusBadRequest)
+		resp.ErrorCode = 40000
+		resp.ErrorMessage = err.Error()
+		WriteJson(w, 200, resp)
 		return
 	}
 
 	code, body := errorHandler(err)
 	e, ok := body.(error)
 	if ok {
-		http.Error(w, e.Error(), code)
+		resp.ErrorCode = code
+		resp.ErrorMessage = e.Error()
+		// http.Error(w, e.Error(), code)
+		WriteJson(w, 200, resp)
 	} else {
 		WriteJson(w, code, body)
 	}

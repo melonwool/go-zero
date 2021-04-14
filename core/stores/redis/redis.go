@@ -7,8 +7,8 @@ import (
 	"time"
 
 	red "github.com/go-redis/redis"
-	"github.com/tal-tech/go-zero/core/breaker"
-	"github.com/tal-tech/go-zero/core/mapping"
+	"github.com/melonwool/go-zero/core/breaker"
+	"github.com/melonwool/go-zero/core/mapping"
 )
 
 const (
@@ -40,6 +40,7 @@ type (
 		Addr string
 		Type string
 		Pass string
+		DB   int
 		brk  breaker.Breaker
 	}
 
@@ -70,7 +71,7 @@ type (
 )
 
 // NewRedis returns a Redis.
-func NewRedis(redisAddr, redisType string, redisPass ...string) *Redis {
+func NewRedis(redisAddr, redisType string, db int, redisPass ...string) *Redis {
 	var pass string
 	for _, v := range redisPass {
 		pass = v
@@ -80,6 +81,7 @@ func NewRedis(redisAddr, redisType string, redisPass ...string) *Redis {
 		Addr: redisAddr,
 		Type: redisType,
 		Pass: pass,
+		DB:   db,
 		brk:  breaker.NewBreaker(),
 	}
 }
@@ -1706,7 +1708,7 @@ func getRedis(r *Redis) (RedisNode, error) {
 	case ClusterType:
 		return getCluster(r.Addr, r.Pass)
 	case NodeType:
-		return getClient(r.Addr, r.Pass)
+		return getClient(r.Addr, r.Pass, r.DB)
 	default:
 		return nil, fmt.Errorf("redis type '%s' is not supported", r.Type)
 	}

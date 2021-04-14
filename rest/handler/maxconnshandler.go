@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/syncx"
-	"github.com/tal-tech/go-zero/rest/internal"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/syncx"
+	"github.com/melonwool/go-zero/rest/internal"
 )
 
 // MaxConns returns a middleware that limit the concurrent connections.

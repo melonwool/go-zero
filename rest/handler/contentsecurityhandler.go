@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/codec"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/rest/httpx"
-	"github.com/tal-tech/go-zero/rest/internal/security"
+	"github.com/melonwool/go-zero/core/codec"
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/rest/httpx"
+	"github.com/melonwool/go-zero/rest/internal/security"
 )
 
 const contentSecurity = "X-Content-Security"

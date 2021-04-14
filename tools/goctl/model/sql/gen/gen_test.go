@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/melonwool/go-zero/core/logx"
+	"github.com/melonwool/go-zero/core/stringx"
+	"github.com/melonwool/go-zero/tools/goctl/config"
+	"github.com/melonwool/go-zero/tools/goctl/model/sql/builderx"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/stringx"
-	"github.com/tal-tech/go-zero/tools/goctl/config"
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/builderx"
 )
 
 var (
