@@ -76,7 +76,7 @@ func mkdir(ctx *ctx.ProjectContext, proto parser.Proto) (DirContext, error) {
 		Base:     filepath.Base(etcDir),
 	}
 	inner[etcConfigDir] = Dir{
-		Filename: etcDir,
+		Filename: etcConfigDir,
 		Package:  filepath.ToSlash(filepath.Join(ctx.Path, strings.TrimPrefix(etcDir, ctx.Dir))),
 		Base:     filepath.Base(etcDir),
 	}
